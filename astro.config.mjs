@@ -14,7 +14,7 @@ import {pluginLineNumbers} from '@expressive-code/plugin-line-numbers'
 
 import {visit} from 'unist-util-visit'
 import {pluginCollapsibleSections} from '@expressive-code/plugin-collapsible-sections'
-import {site} from "./src/consts.ts";
+import {config} from "./src/consts.ts";
 
 function customRehypeLazyLoadImage() {
   return function (tree) {
@@ -36,7 +36,7 @@ console.log(isProd, isDev, 'import.meta.env.DEV')
 
 export default defineConfig({
   site: 'https://astro-yi-nu.vercel.app',
-   base: isProd? site.config.githubPagePrefix : '',
+   base: isProd? config.githubPagePrefix : '',
   integrations: [sitemap(), tailwind(), solid(), expressiveCode({
     plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
     themes: ["github-dark", "github-light"],
