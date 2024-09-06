@@ -8,7 +8,7 @@ import {site, infoLinks} from "../consts";
   <div class="flex items-center justify-center flex-wrap">
     {
       infoLinks.map((infoItem) => (
-        <a title={infoItem.name} href={infoItem.outlink} target="_blank">
+        <a title={infoItem.name} href={getUrl()+infoItem.outlink} target="_blank">
           <i class={infoItem.icon + " text-2xl mr-2 cursor-pointer"}/>
         </a>
       ))

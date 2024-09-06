@@ -14,7 +14,7 @@ import {donate} from "../consts";
       <div id="wechatpay" class="border-t border-b p-2">
         <img src="/wechat.svg" class="h-4" alt="wechat"/>
       </div>
-      <a class="border rounded-tr-lg rounded-br-lg p-2" href={donate.paypalUrl} target="_blank">
+      <a class="border rounded-tr-lg rounded-br-lg p-2" href={getUrl()+donate.paypalUrl} target="_blank">
         <img src="/paypal.svg" class="h-4" alt="paypal"/>
       </a>
     </div>

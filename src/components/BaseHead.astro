@@ -2,17 +2,17 @@
 import '../styles/index.css'
 import {site, config} from "../consts";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
+import {getUrl} from "../utils/getUrl";
 const {mathjax = false, mermaid = false} = Astro.props
 ---
 <head>
   <!-- Global Metadata -->
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <link rel="icon" type="image/svg+xml" href={site.favicon}/>
+  <link rel="icon" type="image/svg+xml" href={getUrl()+site.favicon}/>
   <meta name="generator" content={Astro.generator}/>
   <!-- Canonical URL -->
-  <link rel="canonical" href={canonicalURL}/>
+  <link rel="canonical" href={getUrl()+canonicalURL}/>
 
   <!-- Primary Meta Tags -->
   <meta name="title" content={site.title}/>

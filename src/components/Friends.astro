@@ -4,7 +4,7 @@ const { name, avatar, description, url } = Astro.props;
 
 <a
   class="flex items-center h-24 shadow rounded-lg hover:cursor-pointer bg-skin-card w-auto p-2"
-  href={url}
+  href={getUrl()+url}
   target="_blank"
 >
   <img class="h-16 w-16 rounded m-2" src={avatar} alt="avatar" />
