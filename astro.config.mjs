@@ -42,5 +42,8 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkModifiedTime, resetRemark, remarkDirective, remarkAsides({}),remarkCollapse({})],
     rehypePlugins: [customRehypeLazyLoadImage],
+  },
+  build:{
+    assetsPrefix: '/astro-yi-test'
   }
 });
