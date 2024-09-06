@@ -12,6 +12,7 @@ let tagArr = getUniqueTags(blogs);
 let categoryCount = getCountByCategory(blogs);
 let sortPosts = await sortPostsByDate(blogs);
 let resultPosts = sortPosts.splice(0, site.recentBlogSize);
+import {getUrl} from "../utils/getUrl";
 ---
 
 <div>

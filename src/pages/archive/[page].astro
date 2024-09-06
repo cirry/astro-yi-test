@@ -5,6 +5,7 @@ import { sortPostsByDate } from "src/utils/sortPostsByDate";
 import getPostsByYear from "src/utils/getPostsByYear";
 import  {site} from "../../consts";
 import dayjs from "dayjs";
+import {getUrl} from "src/utils/getUrl";
 import { getCollectionByName } from "../../utils/getCollectionByName";
 export async function getStaticPaths({ paginate }) {
   let posts = await getCollectionByName("blog");

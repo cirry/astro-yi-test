@@ -6,7 +6,7 @@ import SearchTitle from "src/components/SearchTitle.astro";
 import {formatDate} from "../../utils/formatDate";
 import {sortPostsByDate} from "src/utils/sortPostsByDate";
 import {getCollectionByName} from "../../utils/getCollectionByName";
-import {formatDate} from "../../utils/formatDate";
+import {getUrl} from "src/utils/getUrl";
 export async function getStaticPaths() {
   const posts = await getCollectionByName("blog");
   const category = getUniqueCategory(posts);

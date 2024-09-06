@@ -13,6 +13,7 @@ const blogs = await getCollectionByName('blog')
 let tagArr = getUniqueTags(blogs);
 let categoryCount = getCountByCategory(blogs);
 let tagCount = getCountByTagName(blogs);
+import {getUrl} from "../utils/getUrl";
 ---
 
 <header class="fixed top-0 w-full bg-skin-fill text-skin-base z-10">
