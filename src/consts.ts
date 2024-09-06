@@ -40,7 +40,8 @@ export const config = {
   busuanzi: false,
   lang: 'en', // en | zh-cn | cs
   codeFoldingStartLines: 16, // Need to re-run the project to take effect
-  ga: false // If you want to integrate with Google Analytics, just enter your GA-ID here.
+  ga: false, // If you want to integrate with Google Analytics, just enter your GA-ID here.
+  githubPagePrefix:'/astro-yi-test', // If you use github pages deploy, please input your project name e.g. "/astro-yi"
 }
 
 /**
