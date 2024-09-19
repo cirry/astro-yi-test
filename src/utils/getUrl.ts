@@ -10,5 +10,5 @@ export const getUrl = (suffixUrl ?: string): string => {
   if (!isProd) {
     return ''
   }
-  return '/' + config.githubPagePrefix + '/' + suffixUrl
+  return config.githubPagePrefix + '/' + suffixUrl
 }
